@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "runday-meeting-created",
+    "SubjectPart": "Your meeting has been created!",
+    "TextPart": "%text%",
+    "HtmlPart": "%html%"
+  }
+}
