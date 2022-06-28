@@ -31,7 +31,7 @@
 
     <mj-section background-color="#FFF" padding="50px 0 50px 0">
       <mj-column width="100%">
-        <mj-text align="center" color="#000000" padding="0px" font-size="20px">Congratulations! Your meeting has been created successfully</mj-text>
+        <mj-text align="center" color="#000000" padding="0px" font-size="20px">{{email_title}}</mj-text>
       </mj-column>
     </mj-section>
 
