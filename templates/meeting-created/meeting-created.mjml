@@ -107,7 +107,7 @@
 
       <mj-section background-color="#FFF" padding="50px">
         <mj-column>
-          <mj-text padding="0px" align="center" color="#000" font-size="18px">&copy; 2018-2022 Runday.io</mj-text>
+          <mj-text padding="0px" align="center" color="#000" font-size="18px">&copy; 2018-2022 <a href="https://runday.io">Runday.io</a></mj-text>
           <mj-text padding="0px" align="center" color="#808080">AI Meeting Assistant for Teams.</mj-text>
         </mj-column>
       </mj-section>
