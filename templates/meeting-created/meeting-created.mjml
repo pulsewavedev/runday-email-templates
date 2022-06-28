@@ -1,0 +1,120 @@
+<mjml>
+  <mj-head>
+    <mj-title>Runday.io Meeting</mj-title>
+    <mj-preview>Runday Meeting has been created!</mj-preview>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,500"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, sans-serif"></mj-all>
+      <mj-text font-weight="300" font-size="16px" color="#616161" line-height="24px"></mj-text>
+      <mj-section padding="0px"></mj-section>
+    </mj-attributes>
+    <mj-style>
+      @media all and (min-width: 600px) {
+        .border {
+          border: 2px solid #5BA2FF;
+          border-radius: 20px;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#FFF">
+
+    <!-- <mj-section background-color="#FFF" padding="0px">
+      <mj-column padding="0px">
+        <mj-image width="600px" src="../../images/runs-on-runday.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
+      </mj-column>
+
+    </mj-section> -->
+    <mj-hero height="120px" background-width="600px" background-height="100px" background-url="https://runday.s3.us-west-2.amazonaws.com/assets/email/banner-image3.png" background-color="#2a3448">
+
+    </mj-hero>
+
+    <mj-section background-color="#FFF" padding="50px 0 50px 0">
+      <mj-column width="100%">
+        <mj-text align="center" color="#000000" padding="0px" font-size="20px">Congratulations! Your meeting has been created successfully</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="#FFF">
+      <mj-section background-color="#FFF">
+        <mj-group css-class="border" width="75%">
+
+          <mj-column width="100%" padding="10px 0px 10px 0px">
+            <mj-text font-size="18px" font-weight="400" align="center" color="#000000">
+              {{meeting_title}}
+            </mj-text>
+          </mj-column>
+
+
+          <mj-column width="100%" padding="0px 0px 10px 0px">
+            <mj-social font-size="15px" font-weight="normal" mode="vertical" align="center" padding="0px" text-padding="0 0 0 10px" line-height="40px">
+              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/person.png" alt="participants">
+                {{meeting_participants}}
+              </mj-social-element>
+              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/clock.png">
+                {{meeting_times}}
+              </mj-social-element>
+              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/calendar.png">
+                {{meeting_date}}
+              </mj-social-element>
+            </mj-social>
+          </mj-column>
+
+          <mj-column width="100%" padding="0px 0px 10px 0px">
+            <mj-text align="center">
+              Join Here <a href="{{meeting_link}}"> {{meeting_link_text}} </a>
+            </mj-text>
+            <mj-text align="center">
+              {{meeting_notes}}
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-wrapper padding="0px">
+      <!-- <mj-section background-color="#FFF">
+        <mj-column>
+          <mj-text align="center" font-size="18px" font-weight="bold" color="#000">
+            Add to Calendar
+          </mj-text>
+        </mj-column>
+      </mj-section> -->
+
+
+      <!-- <mj-section padding="0px" background-color="#FFF">
+        <mj-group>
+          <mj-column width="100%" padding="0px">
+            <mj-social font-size="15px" font-weight="normal" icon-size="80px" mode="horizontal">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/google.png" href="https://google.com">
+              </mj-social-element>
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/apple.png" href="https://apple.com">
+              </mj-social-element>
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/outlook.png" href="https://outlook.com">
+              </mj-social-element>
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/ics.png" href="https://icsfilehere">
+              </mj-social-element>
+            </mj-social>
+          </mj-column>
+          <mj-column width="25%">
+            <mj-spacer height="50px" />
+          </mj-column>
+        </mj-group>
+      </mj-section> -->
+
+      <!-- <mj-section background-color="#FFF">
+        <mj-column>
+          <mj-image fluid-on-mobile="true" width="600px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/runday-footer.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
+        </mj-column>
+      </mj-section> -->
+
+      <mj-section background-color="#FFF" padding="50px">
+        <mj-column>
+          <mj-text padding="0px" align="center" color="#000" font-size="18px">&copy; 2018-2022 Runday.io</mj-text>
+          <mj-text padding="0px" align="center" color="#808080">AI Meeting Assistant for Teams.</mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>
