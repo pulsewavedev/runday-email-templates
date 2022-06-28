@@ -73,34 +73,31 @@
     </mj-wrapper>
 
     <mj-wrapper padding="0px">
-      <!-- <mj-section background-color="#FFF">
+      <mj-section background-color="#FFF">
         <mj-column>
           <mj-text align="center" font-size="18px" font-weight="bold" color="#000">
             Add to Calendar
           </mj-text>
         </mj-column>
-      </mj-section> -->
+      </mj-section>
 
 
-      <!-- <mj-section padding="0px" background-color="#FFF">
+      <mj-section padding="0px" background-color="#FFF">
         <mj-group>
           <mj-column width="100%" padding="0px">
-            <mj-social font-size="15px" font-weight="normal" icon-size="80px" mode="horizontal">
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/google.png" href="https://google.com">
+            <mj-social icon-size="80px" mode="horizontal" inner-padding="5px">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/google.png" href="https://google.com" alt="Google">
               </mj-social-element>
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/apple.png" href="https://apple.com">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/apple.png" href="https://apple.com" alt="Apple">
               </mj-social-element>
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/outlook.png" href="https://outlook.com">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/outlook.png" href="https://outlook.com" alt="Outlook">
               </mj-social-element>
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/ics.png" href="https://icsfilehere">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/ics.png" href="https://icsfilehere" alt="ICS">
               </mj-social-element>
             </mj-social>
           </mj-column>
-          <mj-column width="25%">
-            <mj-spacer height="50px" />
-          </mj-column>
         </mj-group>
-      </mj-section> -->
+      </mj-section>
 
       <!-- <mj-section background-color="#FFF">
         <mj-column>
