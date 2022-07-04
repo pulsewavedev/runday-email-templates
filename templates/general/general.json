@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "runday-general",
+    "SubjectPart": "Runday.io",
+    "TextPart": "%text%",
+    "HtmlPart": "%html%"
+  }
+}
