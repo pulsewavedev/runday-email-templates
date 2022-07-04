@@ -61,9 +61,7 @@
           </mj-column>
 
           <mj-column width="100%" padding="0px 0px 10px 0px">
-            <mj-text align="center">
-              Join Here <a href="{{meeting_link}}"> {{meeting_link_text}} </a>
-            </mj-text>
+            <mj-image width="50px" height="50px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/link.png" href="{{meeting_link}}" />
             <mj-text align="center">
               {{meeting_notes}}
             </mj-text>
