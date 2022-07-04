@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "runday-voting-started",
+    "SubjectPart": "Start voting now!",
+    "TextPart": "%text%",
+    "HtmlPart": "%html%"
+  }
+}

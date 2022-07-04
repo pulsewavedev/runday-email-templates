@@ -1,0 +1,75 @@
+<mjml>
+  <mj-head>
+    <mj-title></mj-title>
+    <mj-preview>Start voting now!</mj-preview>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,500"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, sans-serif"></mj-all>
+      <mj-text font-weight="300" font-size="16px" color="#616161" line-height="24px"></mj-text>
+      <mj-section padding="0px"></mj-section>
+    </mj-attributes>
+    <mj-style>
+      @media all and (min-width: 600px) {
+        .border {
+          border: 2px solid #5BA2FF;
+          border-radius: 20px;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#FFF">
+
+    <mj-hero height="120px" background-width="600px" background-height="100px" background-url="https://runday.s3.us-west-2.amazonaws.com/assets/email/banner-image3.png" background-color="#2a3448">
+
+    </mj-hero>
+
+    <mj-section background-color="#FFF" padding="0">
+      <mj-column width="100%">
+        <mj-text align="center" color="#000000" padding="0px" font-size="20px"></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="#FFF">
+
+      <mj-section padding="0 0 50px 0">
+        <mj-column>
+          <mj-text align="center">
+            You have been invited to a meeting.
+          </mj-text>
+          <mj-text align="center">
+            Please vote on the best times that work for you.
+          </mj-text>
+
+          <mj-text align="center">
+            <a href="{{voting_link}}"> {{voting_link_text}} </a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#FFF" padding-bottom="50px">
+        <mj-group css-class="border" width="75%">
+
+          <mj-column width="100%" padding="10px 0px 10px 0px">
+            <mj-text font-size="18px" font-weight="400" align="center" color="#000000">
+              {{meeting_title}}
+            </mj-text>
+          </mj-column>
+
+          <mj-column width="100%" padding="0px 0px 10px 0px">
+            <mj-text align="center">
+              {{meeting_notes}}
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+
+      <mj-section background-color="#FFF">
+        <mj-column>
+          <mj-image fluid-on-mobile="true" width="600px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/footer.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

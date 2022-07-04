@@ -47,15 +47,24 @@
 
 
           <mj-column width="100%" padding="0px 0px 10px 0px">
-            <mj-social font-size="15px" font-weight="normal" mode="vertical" align="center" padding="0px" text-padding="0 0 0 10px" line-height="40px">
-              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/person.png" alt="participants">
-                {{meeting_participants}}
-              </mj-social-element>
+            <mj-social font-size="15px" font-weight="normal" mode="horizontal" align="center" padding="0px" text-padding="0 10px 0 0px" line-height="40px">
+
               <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/clock.png">
-                {{meeting_times}}
+                12:00 PM - 13:30 PM
               </mj-social-element>
               <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/calendar.png">
-                {{meeting_date}}
+                March 22
+              </mj-social-element>
+              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/time.png" alt="participants">
+                1 Hour
+              </mj-social-element>
+            </mj-social>
+          </mj-column>
+
+          <mj-column width="100%" padding="0px 0px 10px 0px">
+            <mj-social font-size="15px" font-weight="normal" mode="horizontal" align="center" padding="0px" text-padding="0 0 0 0px" line-height="40px">
+              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/person.png" alt="participants">
+                {{meeting_participants}}
               </mj-social-element>
             </mj-social>
           </mj-column>

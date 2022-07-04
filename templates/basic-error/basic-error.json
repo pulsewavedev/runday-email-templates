@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "runday-basic-error",
+    "SubjectPart": "Sorry an error has occured",
+    "TextPart": "%text%",
+    "HtmlPart": "%html%"
+  }
+}
