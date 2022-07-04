@@ -25,7 +25,7 @@
       </mj-column>
 
     </mj-section> -->
-    <mj-hero height="120px" background-width="600px" background-height="100px" background-url="https://runday.s3.us-west-2.amazonaws.com/assets/email/banner-image3.png" background-color="#2a3448">
+    <mj-hero height="220px" background-width="600px" background-height="100px" background-url="https://runday.s3.us-west-2.amazonaws.com/assets/email/header_generic.png" background-color="#2a3448">
 
     </mj-hero>
 
@@ -76,7 +76,7 @@
       <mj-section background-color="#FFF">
         <mj-column>
           <mj-text align="center" font-size="18px" font-weight="bold" color="#000">
-            Add to Calendar
+            {{calendar_options_title}}
           </mj-text>
         </mj-column>
       </mj-section>
@@ -86,31 +86,31 @@
         <mj-group>
           <mj-column width="100%" padding="0px">
             <mj-social icon-size="80px" mode="horizontal" inner-padding="5px">
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/google.png" href="https://google.com" alt="Google">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/google.png" href="{{google_link}}" alt="Google">
               </mj-social-element>
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/apple.png" href="https://apple.com" alt="Apple">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/apple.png" href="{{apple_link}}" alt="Apple">
               </mj-social-element>
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/outlook.png" href="https://outlook.com" alt="Outlook">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/outlook.png" href="{{outlook_link}}" alt="Outlook">
               </mj-social-element>
-              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/ics.png" href="https://icsfilehere" alt="ICS">
+              <mj-social-element src="https://runday.s3.us-west-2.amazonaws.com/assets/email/add-to-calendar/ics.png" href="{{ics_link}}" alt="ICS">
               </mj-social-element>
             </mj-social>
           </mj-column>
         </mj-group>
       </mj-section>
 
-      <!-- <mj-section background-color="#FFF">
+      <mj-section background-color="#FFF">
         <mj-column>
-          <mj-image fluid-on-mobile="true" width="600px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/runday-footer.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
+          <mj-image fluid-on-mobile="true" width="600px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/footer.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
         </mj-column>
-      </mj-section> -->
+      </mj-section>
 
-      <mj-section background-color="#FFF" padding="50px">
+      <!-- <mj-section background-color="#FFF" padding="50px">
         <mj-column>
           <mj-text padding="0px" align="center" color="#000" font-size="18px">&copy; 2018-2022 <a href="https://runday.io">Runday.io</a></mj-text>
           <mj-text padding="0px" align="center" color="#808080">AI Meeting Assistant for Teams.</mj-text>
         </mj-column>
-      </mj-section>
+      </mj-section> -->
 
     </mj-wrapper>
   </mj-body>
