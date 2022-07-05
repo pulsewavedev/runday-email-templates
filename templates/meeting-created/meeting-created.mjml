@@ -8,12 +8,11 @@
       <mj-text font-weight="300" font-size="16px" color="#616161" line-height="24px"></mj-text>
       <mj-section padding="0px"></mj-section>
     </mj-attributes>
-    <mj-style>
-      @media all and (min-width: 600px) {
-        .border {
-          border: 2px solid #5BA2FF;
-          border-radius: 20px;
-        }
+    <mj-style inline="inline">
+      .footer-link {
+        color: #1359CD;
+        font-size: 15px;
+        font-weight: normal;
       }
     </mj-style>
   </mj-head>
@@ -25,19 +24,26 @@
       </mj-column>
 
     </mj-section> -->
-    <mj-hero height="220px" background-width="600px" background-height="100px" background-url="https://runday.s3.us-west-2.amazonaws.com/assets/email/header_generic.png" background-color="#2a3448">
+    <mj-hero height="220px" background-width="600px" background-height="100px" background-url="https://runday.s3.us-west-2.amazonaws.com/assets/email/header_generic2.png" background-color="#2a3448">
 
     </mj-hero>
 
-    <mj-section background-color="#FFF" padding="50px 0 50px 0">
+
+
+    <!-- <mj-section background-color="#FFF" padding="50px 0 50px 0">
       <mj-column width="100%">
-        <mj-text align="center" color="#000000" padding="0px" font-size="20px">{{email_title}}</mj-text>
+        <mj-text align="center" color="#000000" padding="0px" font-size="20px" font-weight="bold">{{email_title}}</mj-text>
       </mj-column>
-    </mj-section>
+    </mj-section> -->
 
     <mj-wrapper background-color="#FFF">
+      <mj-section padding-top="20px">
+        <mj-column>
+          <mj-divider border-width="1px" border-style="solid" border-color="#3B5C83" />
+        </mj-column>
+      </mj-section>
       <mj-section background-color="#FFF">
-        <mj-group css-class="border" width="75%">
+        <mj-group width="75%">
 
           <mj-column width="100%" padding="10px 0px 10px 0px">
             <mj-text font-size="18px" font-weight="400" align="center" color="#000000">
@@ -47,32 +53,23 @@
 
 
           <mj-column width="100%" padding="0px 0px 10px 0px">
-            <mj-social font-size="15px" font-weight="normal" mode="horizontal" align="center" padding="0px" text-padding="0 10px 0 0px" line-height="40px">
-
-              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/clock.png">
-                {{meeting_times}}
-              </mj-social-element>
+            <mj-social font-size="15px" font-weight="normal" mode="vertical" align="center" padding="0px" text-padding="0 0px 0 10px" line-height="40px">
               <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/calendar.png">
                 {{meeting_date}}
+              </mj-social-element>
+              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/clock.png">
+                {{meeting_times}}
               </mj-social-element>
               <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/time.png" alt="participants">
                 {{meeting_duration}}
               </mj-social-element>
-            </mj-social>
-          </mj-column>
-
-          <mj-column width="100%" padding="0px 0px 10px 0px">
-            <mj-social font-size="15px" font-weight="normal" mode="horizontal" align="center" padding="0px" text-padding="0 0 0 0px" line-height="40px">
               <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/person.png" alt="participants">
                 {{meeting_participants}}
               </mj-social-element>
-            </mj-social>
-          </mj-column>
-
-          <mj-column width="100%" padding="0px 0px 10px 0px">
-            <mj-social font-size="15px" font-weight="normal" mode="horizontal" align="center" padding="0px" text-padding="0 0 0 0px" line-height="40px">
-              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/link.png" href="{{meeting_link}}">
+              <mj-social-element name="participants" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/icons/link.png" href="{{meeting_link}}" color="#2195F2" text-decoration="underline">
+                {{meeting_link}}
               </mj-social-element>
+            </mj-social>
             </mj-social>
           </mj-column>
 
@@ -83,12 +80,19 @@
           </mj-column>
         </mj-group>
       </mj-section>
+
+      <mj-section padding-top="10px">
+        <mj-column>
+          <mj-divider border-width="1px" border-style="solid" border-color="#3B5C83" />
+        </mj-column>
+      </mj-section>
     </mj-wrapper>
+
 
     <mj-wrapper padding="0px">
       <mj-section background-color="#FFF">
         <mj-column>
-          <mj-text align="center" font-size="18px" font-weight="bold" color="#000">
+          <mj-text align="center" font-size="16px" font-weight="bold" color="#000">
             {{calendar_options_title}}
           </mj-text>
         </mj-column>
@@ -112,18 +116,57 @@
         </mj-group>
       </mj-section>
 
+      <mj-section padding-top="10px">
+        <mj-column>
+          <mj-divider border-width="1px" border-style="solid" border-color="#3B5C83" />
+        </mj-column>
+      </mj-section>
+
       <mj-section background-color="#FFF">
         <mj-column>
           <mj-image fluid-on-mobile="true" width="600px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/footer.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
         </mj-column>
       </mj-section>
+      <mj-section padding-top="0">
+        <mj-group>
+          <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+              <a class="footer-link" href="https://www.runday.io/terms">Terms</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              <a class="footer-link" href="https://www.runday.io/privacy">Privacy</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              <a class="footer-link" href="https://www.runday.io/cookies">Cookies</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              <a class="footer-link" href="https://www.runday.io/support">Support</a>
+            </mj-text>
+          </mj-column>
 
-      <!-- <mj-section background-color="#FFF" padding="50px">
-        <mj-column>
-          <mj-text padding="0px" align="center" color="#000" font-size="18px">&copy; 2018-2022 <a href="https://runday.io">Runday.io</a></mj-text>
-          <mj-text padding="0px" align="center" color="#808080">AI Meeting Assistant for Teams.</mj-text>
+        </mj-group>
+      </mj-section>
+
+      <mj-section padding-top="0">
+        <mj-group>
+          <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+              <a class="footer-link" href="https://www.runday.io/">Home</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              <a class="footer-link" href="https://www.runday.io/#pricing">Pricing</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              <a class="footer-link" href="https://www.runday.io/docs">Docs</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              <a class="footer-link" href="https://app.runday.io/onboarding">Login</a>
+            </mj-text>
+          </mj-column>
+
+        </mj-group>
+      </mj-section>
+
+
+      <mj-section padding-top="0">
+        <mj-column width="100%">
+          <mj-text align="center" font-size="12px" color="#1359CD">Copyright &copy; 2018-2022 Runday.io</mj-text>
         </mj-column>
-      </mj-section> -->
+      </mj-section>
 
     </mj-wrapper>
   </mj-body>
