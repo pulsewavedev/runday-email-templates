@@ -9,19 +9,20 @@
       <mj-section padding="0px"></mj-section>
     </mj-attributes>
     <mj-style>
-      @media all and (min-width: 600px) {
-        .border {
-          border: 2px solid #5BA2FF;
-          border-radius: 20px;
-        }
+      .footer-link {
+        font-size: 13px;
+        color: #1359CD;
+        font-weight: normal;
       }
     </mj-style>
   </mj-head>
   <mj-body background-color="#FFF">
 
-    <mj-hero height="220px" background-width="600px" background-height="100px" background-url="https://runday.s3.us-west-2.amazonaws.com/assets/email/header_generic2.png" background-color="#2a3448">
-
-    </mj-hero>
+    <mj-section background-color="#FFF" padding="0">
+      <mj-column>
+        <mj-image fluid-on-mobile="true" width="600px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/header_generic2.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
+      </mj-column>
+    </mj-section>
 
     <mj-section background-color="#FFF" padding="0">
       <mj-column width="100%">
@@ -54,22 +55,23 @@
           <mj-divider border-width="1px" border-style="solid" border-color="#3B5C83" />
         </mj-column>
       </mj-section>
-
       <mj-section background-color="#FFF">
         <mj-column>
           <mj-image fluid-on-mobile="true" width="600px" src="https://runday.s3.us-west-2.amazonaws.com/assets/email/footer.png" alt="Connect your calendar to Runday" href="https://app.runday.io/onboarding" />
         </mj-column>
       </mj-section>
+
+
       <mj-section padding-top="0">
         <mj-group>
           <mj-column width="100%" padding-right="0">
-            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+            <mj-text color="#445566" align="center" line-height="16px" font-weight="bold">
               <a class="footer-link" href="https://www.runday.io/terms">Terms</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
               <a class="footer-link" href="https://www.runday.io/privacy">Privacy</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
               <a class="footer-link" href="https://www.runday.io/cookies">Cookies</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
               <a class="footer-link" href="https://www.runday.io/support">Support</a>
             </mj-text>
           </mj-column>
@@ -80,19 +82,20 @@
       <mj-section padding-top="0">
         <mj-group>
           <mj-column width="100%" padding-right="0">
-            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+            <mj-text color="#445566" align="center" line-height="16px" font-weight="bold">
               <a class="footer-link" href="https://www.runday.io/">Home</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
               <a class="footer-link" href="https://www.runday.io/#pricing">Pricing</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
               <a class="footer-link" href="https://www.runday.io/docs">Docs</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
               <a class="footer-link" href="https://app.runday.io/onboarding">Login</a>
             </mj-text>
           </mj-column>
 
         </mj-group>
       </mj-section>
+
 
       <mj-section padding-top="0">
         <mj-column width="100%">
